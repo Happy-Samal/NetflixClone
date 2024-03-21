@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.main {
+    background-image: url(documents/images/bgImg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1600px, 100vw);
+    height: 96vh;
+    position: relative;
+}
+
+.main .box {
+    height: 96vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+}
+
+.main nav {
+    height: 14%;
+    margin: auto;
+    /* padding: 22px 0; */
+    max-width: 78vw;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main nav span img {
+    width: 95px;
+}
+
+select {
+    width: 87px;
+    height: 22px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 11px;
+}
+
+select option {
+    color: black;
+}
+
+.main nav button {
+    background-color: red;
+    border-radius: 5px;
+    width: 56px;
+    height: 22px;
+    color: white;
+    border: none;
+    margin: 0 7px;
+    font-size: 11px;
+}
+
+.hero {
+    height: 86%;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero> :nth-child(1) {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero> :nth-child(2) {
+    font-size: 17px;
+}
+
+.hero> :nth-child(3) {
+    font-size: 14px;
+}
+
+.emailGet input {
+    width: 258px;
+    height: 40px;
+    padding: 0 12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid #5e5e5e;
+    border-radius: 4px;
+    
+}
+
+.emailGet input::placeholder {
+    font-size: 10px;
+    font-weight: 400;
+    color: #b9b8b8;
+}
+
+.emailGet button {
+    width: 135px;
+    height: 40px;
+    margin: 0 2px;
+    font-size: 14px;
+    color: white;
+    font-weight: 780;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+}
+
+.separation {
+    height: 6px;
+    background-color: #232323;
+    position: relative;
+    z-index: 20;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80vw;
+    margin: auto;
+    color: white;
+    height: 80vh;
+}
+
+.tvVideo {
+    position: relative;
+
+}
+
+.tvVideo img {
+    width: 400px;
+    position: relative;
+    z-index: 10;
+}
+
+.tvVideo video {
+    position: absolute;
+    top: 62px;
+    right: 47px;
+    width: 300px;
+}
+
+.deviceVideo video {
+    position: absolute;
+    top: 24px;
+    right: 74px;
+    width: 250px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text :nth-child(1) {
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.text> :nth-child(2) {
+    font-size: 16px;
+}
+
+.text> :nth-child(3) {
+    font-size: 16px;
+}
+
+.Questions {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px 35px 0px;
+}
+
+.Questions> :nth-child(1) {
+    font-size: 30px;
+    margin: 0px 0px 20px 0px;
+    font-weight: bolder;
+}
+
+.Questions> :nth-child(8) {
+    font-size: 14px;
+    margin: 30px 0px 15px 0px;
+}
+
+.Questions .que {
+    width: 74vw;
+    height: 54px;
+    background-color: rgb(45, 45, 45);
+    margin: 5px 0px;
+    padding: 0px 25px 0px 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.Questions .que:hover{
+    background-color: #424242;
+}
+footer {
+    color: rgb(193, 193, 193);
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+    margin: 50px auto;
+    gap: 14px;
+    font-size: 10px;
+}
+
+.faq {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.faq div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.faq div a {
+    color: rgb(193, 193, 193);
+}
+
+/* Responsive */
+@media screen and (max-width:700px) {
+    .main {
+        height: 500px;
+        background-size:cover;
+    }
+
+    .main .box {
+        height: 500px;
+    }
+
+    .main nav {
+        max-width: 320px;
+    }
+
+    .main nav span img {
+        width: 81px;
+    }
+
+    select {
+        width: 77px;
+        height: 30px;
+    }
+
+    .main nav button {
+        width: 61px;
+        height: 30px;
+        margin: 0px 6px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 28px;
+        text-align: center;
+        width: 340px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 16px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 16px;
+        text-align: center;
+        padding: 0px 61px;
+    }
+
+    .emailGet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+    }
+
+    .first {
+        flex-direction: column;
+        height: 526px;
+    }
+
+    .text :nth-child(1) {
+        font-size: 29px;
+        text-align: center;
+    }
+
+    .text> :nth-child(2) {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .text> :nth-child(3) {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .tvVideo img {
+        width: 330px;
+    }
+
+    .tvVideo video {
+        top: 50px;
+        width: 243px;
+        right: 46px;
+    
+    }
+
+    .deviceVideo video {
+        top: 23px;
+        width: 216px;
+        right: 59px;
+    }
+
+    .Questions> :nth-child(1) {
+        font-size: 32px;
+        text-align: center;
+        width: 386px;
+        margin: 0px 0px 20px 0px;
+    }
+    .Questions .que {
+        height: 58px;
+        font-size: 17px;
+    
+    }
+    .Questions> :nth-child(8) {
+        font-size: 16px;
+        text-align: center;
+        width: 72vw;
+    }
+    .faq {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 33px;
+    }
+    .emailGet input{
+        width: 252px;
+    }
+    .emailGet button {
+        width: 156px;
+    }
+}
